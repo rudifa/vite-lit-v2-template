@@ -1,17 +1,18 @@
 {
-  "name": "vite-app-lit",
-  "private": true,
+  "name": "vite-lit-v2-template",
   "version": "0.0.0",
-  "main": "dist/my-element.es.js",
-  "exports": {
-    ".": "./dist/my-element.es.js"
-  },
+  "authors": [
+    "Vite", "Lit", "Rudolf Farkas @rudifa"
+  ],
+  "private": false,
+  "type": "module",
   "files": [
     "dist"
   ],
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "lit": "^2.0.2"

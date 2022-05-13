@@ -1,4 +1,6 @@
-import { html, css, LitElement } from 'lit'
+/** @prettier */
+
+import {html, css, LitElement} from 'lit';
 
 /**
  * An example element.
@@ -15,7 +17,7 @@ export class MyElement extends LitElement {
         padding: 16px;
         max-width: 800px;
       }
-    `
+    `;
   }
 
   static get properties() {
@@ -23,19 +25,19 @@ export class MyElement extends LitElement {
       /**
        * The name to say "Hello" to.
        */
-      name: { type: String },
+      name: {type: String},
 
       /**
        * The number of times the button has been clicked.
        */
-      count: { type: Number }
-    }
+      count: {type: Number},
+    };
   }
 
   constructor() {
-    super()
-    this.name = 'World'
-    this.count = 0
+    super();
+    this.name = 'World';
+    this.count = 0;
   }
 
   render() {
@@ -45,12 +47,12 @@ export class MyElement extends LitElement {
         Click Count: ${this.count}
       </button>
       <slot></slot>
-    `
+    `;
   }
 
   _onClick() {
-    this.count++
+    this.count++;
   }
 }
 
-window.customElements.define('my-element', MyElement)
+window.customElements.define('my-element', MyElement);
